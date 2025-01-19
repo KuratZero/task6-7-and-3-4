@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Казаков Артемий - first task</title>
+
+    <link rel="preload" href="static/fonts/MTSCompact-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="static/fonts/MTSCompact-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="static/fonts/MTSWide-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="static/fonts/MTSText-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="static/main.css">
+
+    <script src="static/main.js" defer></script>
+</head>
+<body>
+<header>
+    <nav class="desktop-nav">
+        <div class="app-header__top-section">
+            <div class="app-header-button" id="app-header-button">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <ul class="desktop-nav_list" id="menu_list">
+            <li class="desktop-nav_list-item">
+                <div class="nav_menu-button">
+                    <span class="name">Продукты</span>
+                    <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="24"
+                         height="24" class="icon">
+                        <path
+                            d="M6.254 12C5.13904 12 4.58067 13.3483 5.36906 14.1368L9.9588 18.7274C12.8067 21.5758 14.2306 23 16 23C17.7694 23 19.1934 21.5758 22.0412 18.7274L26.6309 14.1368C27.4193 13.3483 26.861 12 25.746 12C25.4141 12 25.0958 12.1319 24.861 12.3666L20.2713 16.9572C18.7974 18.4314 17.8662 19.3553 17.0979 19.9416C16.3874 20.4837 16.1174 20.4965 16 20.4965C15.8826 20.4965 15.6126 20.4837 14.9021 19.9416C14.1338 19.3553 13.2026 18.4314 11.7287 16.9572L7.13894 12.3666C6.90425 12.1319 6.58592 12 6.254 12Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+
+                <div class="drop_list">
+                    <div class="base-menu">
+                        <div class="drop_list-left_section">
+                            <div class="drop_list-name">Продукты</div>
+                            <ul class="drop_list-list">
+                                <li class="drop_list-list_item">
+                                    <div data-id="1.1" class="item-label">Вычисления и хранения (IaaS)</div>
+                                    <div class="drop_list-right_section" id="mobile-sublist-1.1">
+                                        <div class="drop_list-name">Вычисления и хранение (IaaS)</div>
+                                        <ul class="content-list">
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/virtual-infrastructure/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_icon_5892a15699.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Виртуальная инфраструктура</div>
+                                                        <div class="item_subtitle">Комплексное решение для&nbsp;развертывания
+                                                            виртуальной
+                                                            <nobr>ИТ-инфраструктуры</nobr>
+                                                            для&nbsp;проектов разных масштабов
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/iaas-152-fz/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_152_icon_fd8ffd9674.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Виртуальная инфраструктура.
+                                                            Аттестованный сегмент
+                                                            152-ФЗ
+                                                        </div>
+                                                        <div class="item_subtitle">Защищенное облако для ИСПДн</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link"
+                                                   href="/services/virtual-infrastructure-gpu/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_GPU_icon_5b5af9161e.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Виртуальная инфраструктура с GPU</div>
+                                                        <div class="item_subtitle">Графический ускоритель</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/object-storage-s3/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/s3_icon_0a3a26b5d4.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Объектное хранилище</div>
+                                                        <div class="item_subtitle">Сервис хранения данных любого объема
+                                                            и формата с
+                                                            доступом к хранимой информации через интернет из любой точки
+                                                            мира
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/backup/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/backup_icon_b427ce391e.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Резервное копирование</div>
+                                                        <div class="item_subtitle">Резервное копирование данных с
+                                                            персональных
+                                                            компьютеров, VDI и любых устройств с пользовательскими ОC
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/vdi-desktops/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/vdi_icon_73cf48b578.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">VDI</div>
+                                                        <div class="item_subtitle">Виртуальные рабочие места</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/disaster-recovery/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/DR_icon_efd7415ba0.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Катастрофоустойчивая инфраструктура
+                                                        </div>
+                                                        <div class="item_subtitle">Послеаварийное восстановление</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/managed-kubernetes/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/Kuber_icon_39ed7a8fdf.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Managed Kubernetes Service</div>
+                                                        <div class="item_subtitle">Cервис для быстрого развертывания
+                                                            кластеров
+                                                            Kubernetes
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/state-cloud/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/state_cloud_icon_aa739087b6.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Импортозамещённое облако</div>
+                                                        <div class="item_subtitle">Облако с&nbsp;защитой информации.
+                                                            Бета-тест
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop_list-list_item">
+                                    <div data-id="1.2" class="item-label">Бизнес-приложения (SaaS)</div>
+                                    <div class="drop_list-right_section" id="mobile-sublist-1.2">
+                                        <div class="drop_list-name">Бизнес-приложения (SaaS)</div>
+                                        <ul class="content-list">
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/business-applications/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/business_apps_icon_814e8b14cc.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Офисные приложения</div>
+                                                        <div class="item_subtitle">Сервисы для построения экосистемы
+                                                            цифровых
+                                                            рабочих мест
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/kedo/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/kedo_icon_28f45b2d7f.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">КЭДО</div>
+                                                        <div class="item_subtitle">Система кадрового электронного
+                                                            документооборота
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/vdi-desktops/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/vdi_icon_73cf48b578.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">VDI</div>
+                                                        <div class="item_subtitle">Виртуальные рабочие места</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/1c-services/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/1c_icon_6c9b2d95f0.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Комплекс услуг по 1С</div>
+                                                        <div class="item_subtitle">Хостинг, сопровождение, лицензии
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/rpa/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/rpa2_icon_66ee43b781.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">RPA MWS</div>
+                                                        <div class="item_subtitle">Первая российская облачная платформа
+                                                            роботизации
+                                                            на базе Primo RPA
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop_list-list_item">
+                                    <div data-id="1.3" class="item-label">Базы данных и потоковые сервисы
+                                        (DBaaS)
+                                    </div>
+                                    <div class="drop_list-right_section" id="mobile-sublist-1.3">
+                                        <div class="drop_list-name">Базы данных и потоковые сервисы (DBaaS)</div>
+                                        <ul class="content-list">
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/ml-platform/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/ML_icon_0abd3f5440.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">ML-платформа</div>
+                                                        <div class="item_subtitle">Облачная платформа для ML-разработки
+                                                            полного
+                                                            цикла
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/dbaas-for-postgresql/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/postgresql_icon_3a1baccda5.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">DBaaS for PostgreSQL</div>
+                                                        <div class="item_subtitle">Управление базой данных PostgresSQL
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/arenadata/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/arenadata_icon_b649d5fafb.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">СУБД из облака MWS</div>
+                                                        <div class="item_subtitle">Поможем создать инфраструктуру данных
+                                                            любой
+                                                            сложности под задачи бизнеса
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/mws-bi/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/bi_analytics_icon_d6baac50c7.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">BI-платформы в&nbsp;облаке</div>
+                                                        <div class="item_subtitle">Помогаем анализировать и&nbsp;визуализировать
+                                                            данные вашего бизнеса
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop_list-list_item">
+                                    <div data-id="1.4" class="item-label">Кибербезопасность (SECaaS)</div>
+                                    <div class="drop_list-right_section" id="mobile-sublist-1.4">
+                                        <div class="drop_list-name">Кибербезопасность (SECaaS)</div>
+                                        <ul class="content-list">
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/waf/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/WAF_icon_5c8b18bcb1.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Защита веб-приложений (WAF)</div>
+                                                        <div class="item_subtitle">Платформа защиты от атак и
+                                                            уязвимостей в
+                                                            веб‑приложениях
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/anti-ddos/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/anti_ddos_icon_ac177d4c75.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Защита от DDoS-атак</div>
+                                                        <div class="item_subtitle">Круглосуточный мониторинг и защита
+                                                            ресурсов
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/soc/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/soc_icon_9b4945f02f.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Security Operation Center (SOC)</div>
+                                                        <div class="item_subtitle">Комплексный центр круглосуточного
+                                                            мониторинга и
+                                                            реагирования на инциденты информационной безопасности
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/anti-virus-protection/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/antivirus_icon_2e047461bc.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Антивирусная защита</div>
+                                                        <div class="item_subtitle">Защита виртуальных машин от
+                                                            вредоносного ПО
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/mfa/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/MFA_icon_2f1a076a14.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Сервис многофакторной аутентификации
+                                                            (MFA)
+                                                        </div>
+                                                        <div class="item_subtitle">Сервис защиты данных корпоративных
+                                                            учетных
+                                                            записей
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/gost-vpn/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/gost_vpn_icon_62c68020b0.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">ГОСТ VPN</div>
+                                                        <div class="item_subtitle">Сервис для организации защищенного
+                                                            канала между
+                                                            геораспределенными объектами
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/security-awareness/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/sec_awareness_icon_8fe011c2f7.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Security Awareness</div>
+                                                        <div class="item_subtitle">Сервис повышения киберграмотности
+                                                            сотрудников
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop_list-list_item">
+                                    <div data-id="1.5" class="item-label">Сеть и медиа (NaaS)</div>
+                                    <div class="drop_list-right_section" id="mobile-sublist-1.5">
+                                        <div class="drop_list-name">Сеть и медиа (NaaS)</div>
+                                        <ul class="content-list">
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/vpn-interconnect/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/VPN_interconnect_icon_f424d9991c.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">CloudVPN Interconnect</div>
+                                                        <div class="item_subtitle">Изолированные сетевые соединения
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/sd-wan/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/sd_wan_icon_b1a264d075.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Cloud SD-WAN</div>
+                                                        <div class="item_subtitle">Организация распределенной сетевой
+                                                            ИТ-инфраструктуры
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/cdn/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/cdn_icon_1707659733.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Cloud CDN</div>
+                                                        <div class="item_subtitle">Быстрая доставка статического
+                                                            контента
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop_list-list_item">
+                                    <div data-id="1.6" class="item-label">ИИ-облако</div>
+                                    <div class="drop_list-right_section" id="mobile-sublist-1.6">
+                                        <div class="drop_list-name">ИИ-облако</div>
+                                        <ul class="content-list">
+                                            <li class="content-list_item">
+                                                <a class="content-list_link router-link-active router-link-exact-active"
+                                                   href="/services/virtual-infrastructure-gpu/" aria-current="page">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_GPU_icon_5b5af9161e.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Виртуальная инфраструктура с GPU</div>
+                                                        <div class="item_subtitle">Графический ускоритель</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/ml-platform/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/ML_icon_0abd3f5440.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">ML-платформа</div>
+                                                        <div class="item_subtitle">Облачная платформа для ML-разработки
+                                                            полного
+                                                            цикла
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="drop_list-right_section" id="sublist-1.1">
+                            <div class="drop_list-name">Вычисления и хранение (IaaS)</div>
+                            <ul class="content-list">
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/virtual-infrastructure/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_icon_5892a15699.svg">
+                                        <div class="item">
+                                            <div class="item_title">Виртуальная инфраструктура</div>
+                                            <div class="item_subtitle">Комплексное решение для&nbsp;развертывания
+                                                виртуальной
+                                                <nobr>ИТ-инфраструктуры</nobr>
+                                                для&nbsp;проектов разных масштабов
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/iaas-152-fz/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_152_icon_fd8ffd9674.svg">
+                                        <div class="item">
+                                            <div class="item_title">Виртуальная инфраструктура. Аттестованный сегмент
+                                                152-ФЗ
+                                            </div>
+                                            <div class="item_subtitle">Защищенное облако для ИСПДн</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/virtual-infrastructure-gpu/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_GPU_icon_5b5af9161e.svg">
+                                        <div class="item">
+                                            <div class="item_title">Виртуальная инфраструктура с GPU</div>
+                                            <div class="item_subtitle">Графический ускоритель</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/object-storage-s3/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/s3_icon_0a3a26b5d4.svg">
+                                        <div class="item">
+                                            <div class="item_title">Объектное хранилище</div>
+                                            <div class="item_subtitle">Сервис хранения данных любого объема и формата с
+                                                доступом к хранимой информации через интернет из любой точки мира
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/backup/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/backup_icon_b427ce391e.svg">
+                                        <div class="item">
+                                            <div class="item_title">Резервное копирование</div>
+                                            <div class="item_subtitle">Резервное копирование данных с персональных
+                                                компьютеров, VDI и любых устройств с пользовательскими ОC
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/vdi-desktops/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/vdi_icon_73cf48b578.svg">
+                                        <div class="item">
+                                            <div class="item_title">VDI</div>
+                                            <div class="item_subtitle">Виртуальные рабочие места</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/disaster-recovery/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/DR_icon_efd7415ba0.svg">
+                                        <div class="item">
+                                            <div class="item_title">Катастрофоустойчивая инфраструктура</div>
+                                            <div class="item_subtitle">Послеаварийное восстановление</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/managed-kubernetes/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/Kuber_icon_39ed7a8fdf.svg">
+                                        <div class="item">
+                                            <div class="item_title">Managed Kubernetes Service</div>
+                                            <div class="item_subtitle">Cервис для быстрого развертывания кластеров
+                                                Kubernetes
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/state-cloud/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/state_cloud_icon_aa739087b6.svg">
+                                        <div class="item">
+                                            <div class="item_title">Импортозамещённое облако</div>
+                                            <div class="item_subtitle">Облако с&nbsp;защитой информации. Бета-тест</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop_list-right_section" id="sublist-1.2">
+                            <div class="drop_list-name">Бизнес-приложения (SaaS)</div>
+                            <ul class="content-list">
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/business-applications/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/business_apps_icon_814e8b14cc.svg">
+                                        <div class="item">
+                                            <div class="item_title">Офисные приложения</div>
+                                            <div class="item_subtitle">Сервисы для построения экосистемы цифровых
+                                                рабочих мест
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/kedo/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/kedo_icon_28f45b2d7f.svg">
+                                        <div class="item">
+                                            <div class="item_title">КЭДО</div>
+                                            <div class="item_subtitle">Система кадрового электронного документооборота
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/vdi-desktops/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/vdi_icon_73cf48b578.svg">
+                                        <div class="item">
+                                            <div class="item_title">VDI</div>
+                                            <div class="item_subtitle">Виртуальные рабочие места</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/1c-services/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/1c_icon_6c9b2d95f0.svg">
+                                        <div class="item">
+                                            <div class="item_title">Комплекс услуг по 1С</div>
+                                            <div class="item_subtitle">Хостинг, сопровождение, лицензии</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/rpa/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/rpa2_icon_66ee43b781.svg">
+                                        <div class="item">
+                                            <div class="item_title">RPA MWS</div>
+                                            <div class="item_subtitle">Первая российская облачная платформа роботизации
+                                                на базе Primo RPA
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop_list-right_section" id="sublist-1.3">
+                            <div class="drop_list-name">Базы данных и потоковые сервисы (DBaaS)</div>
+                            <ul class="content-list">
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/ml-platform/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/ML_icon_0abd3f5440.svg">
+                                        <div class="item">
+                                            <div class="item_title">ML-платформа</div>
+                                            <div class="item_subtitle">Облачная платформа для ML-разработки полного
+                                                цикла
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/dbaas-for-postgresql/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/postgresql_icon_3a1baccda5.svg">
+                                        <div class="item">
+                                            <div class="item_title">DBaaS for PostgreSQL</div>
+                                            <div class="item_subtitle">Управление базой данных PostgresSQL</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/arenadata/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/arenadata_icon_b649d5fafb.svg">
+                                        <div class="item">
+                                            <div class="item_title">СУБД из облака MWS</div>
+                                            <div class="item_subtitle">Поможем создать инфраструктуру данных любой
+                                                сложности под задачи бизнеса
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/mws-bi/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/bi_analytics_icon_d6baac50c7.svg">
+                                        <div class="item">
+                                            <div class="item_title">BI-платформы в&nbsp;облаке</div>
+                                            <div class="item_subtitle">Помогаем анализировать и&nbsp;визуализировать
+                                                данные вашего бизнеса
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop_list-right_section" id="sublist-1.4">
+                            <div class="drop_list-name">Кибербезопасность (SECaaS)</div>
+                            <ul class="content-list">
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/waf/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/WAF_icon_5c8b18bcb1.svg">
+                                        <div class="item">
+                                            <div class="item_title">Защита веб-приложений (WAF)</div>
+                                            <div class="item_subtitle">Платформа защиты от атак и уязвимостей в
+                                                веб‑приложениях
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/anti-ddos/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/anti_ddos_icon_ac177d4c75.svg">
+                                        <div class="item">
+                                            <div class="item_title">Защита от DDoS-атак</div>
+                                            <div class="item_subtitle">Круглосуточный мониторинг и защита ресурсов</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/soc/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/soc_icon_9b4945f02f.svg">
+                                        <div class="item">
+                                            <div class="item_title">Security Operation Center (SOC)</div>
+                                            <div class="item_subtitle">Комплексный центр круглосуточного мониторинга и
+                                                реагирования на инциденты информационной безопасности
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/anti-virus-protection/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/antivirus_icon_2e047461bc.svg">
+                                        <div class="item">
+                                            <div class="item_title">Антивирусная защита</div>
+                                            <div class="item_subtitle">Защита виртуальных машин от вредоносного ПО</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/mfa/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/MFA_icon_2f1a076a14.svg">
+                                        <div class="item">
+                                            <div class="item_title">Сервис многофакторной аутентификации (MFA)</div>
+                                            <div class="item_subtitle">Сервис защиты данных корпоративных учетных
+                                                записей
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/gost-vpn/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/gost_vpn_icon_62c68020b0.svg">
+                                        <div class="item">
+                                            <div class="item_title">ГОСТ VPN</div>
+                                            <div class="item_subtitle">Сервис для организации защищенного канала между
+                                                геораспределенными объектами
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/security-awareness/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/sec_awareness_icon_8fe011c2f7.svg">
+                                        <div class="item">
+                                            <div class="item_title">Security Awareness</div>
+                                            <div class="item_subtitle">Сервис повышения киберграмотности сотрудников
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop_list-right_section" id="sublist-1.5">
+                            <div class="drop_list-name">Сеть и медиа (NaaS)</div>
+                            <ul class="content-list">
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/vpn-interconnect/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/VPN_interconnect_icon_f424d9991c.svg">
+                                        <div class="item">
+                                            <div class="item_title">CloudVPN Interconnect</div>
+                                            <div class="item_subtitle">Изолированные сетевые соединения</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/sd-wan/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/sd_wan_icon_b1a264d075.svg">
+                                        <div class="item">
+                                            <div class="item_title">Cloud SD-WAN</div>
+                                            <div class="item_subtitle">Организация распределенной сетевой
+                                                ИТ-инфраструктуры
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/cdn/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/cdn_icon_1707659733.svg">
+                                        <div class="item">
+                                            <div class="item_title">Cloud CDN</div>
+                                            <div class="item_subtitle">Быстрая доставка статического контента</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop_list-right_section" id="sublist-1.6">
+                            <div class="drop_list-name">ИИ-облако</div>
+                            <ul class="content-list">
+                                <li class="content-list_item">
+                                    <a class="content-list_link router-link-active router-link-exact-active"
+                                       href="/services/virtual-infrastructure-gpu/" aria-current="page">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_GPU_icon_5b5af9161e.svg">
+                                        <div class="item">
+                                            <div class="item_title">Виртуальная инфраструктура с GPU</div>
+                                            <div class="item_subtitle">Графический ускоритель</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/ml-platform/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/ML_icon_0abd3f5440.svg">
+                                        <div class="item">
+                                            <div class="item_title">ML-платформа</div>
+                                            <div class="item_subtitle">Облачная платформа для ML-разработки полного
+                                                цикла
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="desktop-nav_list-item">
+                <div class="nav_menu-button">
+                    <span class="name">Профессиональные сервисы</span>
+                    <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="24"
+                         height="24" class="icon">
+                        <path
+                            d="M6.254 12C5.13904 12 4.58067 13.3483 5.36906 14.1368L9.9588 18.7274C12.8067 21.5758 14.2306 23 16 23C17.7694 23 19.1934 21.5758 22.0412 18.7274L26.6309 14.1368C27.4193 13.3483 26.861 12 25.746 12C25.4141 12 25.0958 12.1319 24.861 12.3666L20.2713 16.9572C18.7974 18.4314 17.8662 19.3553 17.0979 19.9416C16.3874 20.4837 16.1174 20.4965 16 20.4965C15.8826 20.4965 15.6126 20.4837 14.9021 19.9416C14.1338 19.3553 13.2026 18.4314 11.7287 16.9572L7.13894 12.3666C6.90425 12.1319 6.58592 12 6.254 12Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+
+                <div class="drop_list">
+                    <div class="base-menu">
+                        <div class="drop_list-left_section">
+                            <div class="drop_list-name">Профессиональные сервисы</div>
+                            <ul class="drop_list-list">
+                                <li class="drop_list-list_item">
+                                    <div data-id="2.1" class="item-label">Консалтинг и проектные услуги</div>
+                                    <div class="drop_list-right_section mobile-list" id="mobile-sublist-2.1">
+                                        <div class="drop_list-name">Консалтинг и проектные услуги</div>
+                                        <ul class="content-list">
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/it-infrastructure-audit/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/IT_audit_icon_fa21a4af45.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Аудит ИТ-инфраструктуры</div>
+                                                        <div class="item_subtitle">Анализ текущего состояния ИТ-систем
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/cloud-migration/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/migration2cloud_icon_1c5227db02.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Миграция в облако</div>
+                                                        <div class="item_subtitle">Перенос инфраструктуры клиента на
+                                                            площадку
+                                                            провайдера
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link"
+                                                   href="/services/cloud-strategy-for-it-infrastructure-development/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/cloud_strategy_icon_d6014fd884.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Облачная стратегия развития
+                                                            ИТ-инфраструктуры
+                                                        </div>
+                                                        <div class="item_subtitle">Разработка оптимальной модели
+                                                            развития в облаке
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/value-engineering/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/managed_services_icon_d652711967.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Value Engineering</div>
+                                                        <div class="item_subtitle">Качественная и количественная оценка
+                                                            выгод от
+                                                            внедрения облачных сервисов
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop_list-list_item">
+                                    <div data-id="2.2" class="item-label">Профессиональные сервисы и
+                                        аутсорсинг
+                                    </div>
+                                    <div class="drop_list-right_section mobile-list" id="mobile-sublist-2.2">
+                                        <div class="drop_list-name">Профессиональные сервисы и аутсорсинг</div>
+                                        <ul class="content-list">
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/professional-services/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/profservices_icon_f596570ac8.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Профессиональные сервисы</div>
+                                                        <div class="item_subtitle">Реализация облачных проектов для
+                                                            разных задач
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/managed-services/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/managed_services_icon_d652711967.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Управление сервисами</div>
+                                                        <div class="item_subtitle">Экспертиза высокой квалификации без
+                                                            необходимости
+                                                            тратиться на найм собственных сотрудников
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link"
+                                                   href="/services/outsourcing-of-information-security/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/Cybersec_outsourcing_icon_1065543b1e.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Аутсорсинг ИБ</div>
+                                                        <div class="item_subtitle">Безопасность как услуга</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/1c-services/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/1c_icon_6c9b2d95f0.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Сопровождение 1С</div>
+                                                        <div class="item_subtitle">Поддержка пользователей и приложений
+                                                            1С
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </li>
+                                <li class="drop_list-list_item">
+                                    <div data-id="2.3" class="item-label">Выделенная инфраструктура —
+                                        Custom
+                                    </div>
+                                    <div class="drop_list-right_section mobile-list" id="mobile-sublist-2.3">
+                                        <div class="drop_list-name">Выделенная инфраструктура — Custom</div>
+                                        <ul class="content-list">
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/private-cloud/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/private_cloud_icon_1b48a298b7.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Private Cloud</div>
+                                                        <div class="item_subtitle">Частное облако</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/sap-hosting/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/SAP_icon_0e8ef853c1.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">SAP-хостинг</div>
+                                                        <div class="item_subtitle">Размещение SAP-приложений в облаке
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/haas/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/HAAS_icon_2544c27321.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Hardware-as-a-Service (HAAS)</div>
+                                                        <div class="item_subtitle">Аренда выделенного оборудования</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/hybrid-cloud/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/Hybrid_cloud_icon_29ff9f40a9.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Hybrid Cloud</div>
+                                                        <div class="item_subtitle">Гибридное облако</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/1c-services/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/1c_icon_6c9b2d95f0.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">1С-хостинг</div>
+                                                        <div class="item_subtitle">Облако и сервисы для приложений 1С
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="content-list_item">
+                                                <a class="content-list_link" href="/services/custom-cloud/">
+                                                    <img width="40" height="40"
+                                                         src="https://ru-msk-2.store.cloud.mts.ru/uploads/custom_cloud_icon_e45a42cf9b.svg">
+                                                    <div class="item">
+                                                        <div class="item_title">Проектные облачные решения (Custom)
+                                                        </div>
+                                                        <div class="item_subtitle">Облачная инфраструктура,
+                                                            разработанная под
+                                                            уникальные нужды вашего бизнеса
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="drop_list-right_section" id="sublist-2.1">
+                            <div class="drop_list-name">Консалтинг и проектные услуги</div>
+                            <ul class="content-list">
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/it-infrastructure-audit/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/IT_audit_icon_fa21a4af45.svg">
+                                        <div class="item">
+                                            <div class="item_title">Аудит ИТ-инфраструктуры</div>
+                                            <div class="item_subtitle">Анализ текущего состояния ИТ-систем</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/cloud-migration/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/migration2cloud_icon_1c5227db02.svg">
+                                        <div class="item">
+                                            <div class="item_title">Миграция в облако</div>
+                                            <div class="item_subtitle">Перенос инфраструктуры клиента на площадку
+                                                провайдера
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link"
+                                       href="/services/cloud-strategy-for-it-infrastructure-development/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/cloud_strategy_icon_d6014fd884.svg">
+                                        <div class="item">
+                                            <div class="item_title">Облачная стратегия развития ИТ-инфраструктуры</div>
+                                            <div class="item_subtitle">Разработка оптимальной модели развития в облаке
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/value-engineering/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/managed_services_icon_d652711967.svg">
+                                        <div class="item">
+                                            <div class="item_title">Value Engineering</div>
+                                            <div class="item_subtitle">Качественная и количественная оценка выгод от
+                                                внедрения облачных сервисов
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop_list-right_section" id="sublist-2.2">
+                            <div class="drop_list-name">Профессиональные сервисы и аутсорсинг</div>
+                            <ul class="content-list">
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/professional-services/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/profservices_icon_f596570ac8.svg">
+                                        <div class="item">
+                                            <div class="item_title">Профессиональные сервисы</div>
+                                            <div class="item_subtitle">Реализация облачных проектов для разных задач
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/managed-services/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/managed_services_icon_d652711967.svg">
+                                        <div class="item">
+                                            <div class="item_title">Управление сервисами</div>
+                                            <div class="item_subtitle">Экспертиза высокой квалификации без необходимости
+                                                тратиться на найм собственных сотрудников
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/outsourcing-of-information-security/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/Cybersec_outsourcing_icon_1065543b1e.svg">
+                                        <div class="item">
+                                            <div class="item_title">Аутсорсинг ИБ</div>
+                                            <div class="item_subtitle">Безопасность как услуга</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/1c-services/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/1c_icon_6c9b2d95f0.svg">
+                                        <div class="item">
+                                            <div class="item_title">Сопровождение 1С</div>
+                                            <div class="item_subtitle">Поддержка пользователей и приложений 1С</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="drop_list-right_section" id="sublist-2.3">
+                            <div class="drop_list-name">Выделенная инфраструктура — Custom</div>
+                            <ul class="content-list">
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/private-cloud/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/private_cloud_icon_1b48a298b7.svg">
+                                        <div class="item">
+                                            <div class="item_title">Private Cloud</div>
+                                            <div class="item_subtitle">Частное облако</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/sap-hosting/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/SAP_icon_0e8ef853c1.svg">
+                                        <div class="item">
+                                            <div class="item_title">SAP-хостинг</div>
+                                            <div class="item_subtitle">Размещение SAP-приложений в облаке</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/haas/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/HAAS_icon_2544c27321.svg">
+                                        <div class="item">
+                                            <div class="item_title">Hardware-as-a-Service (HAAS)</div>
+                                            <div class="item_subtitle">Аренда выделенного оборудования</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/hybrid-cloud/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/Hybrid_cloud_icon_29ff9f40a9.svg">
+                                        <div class="item">
+                                            <div class="item_title">Hybrid Cloud</div>
+                                            <div class="item_subtitle">Гибридное облако</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/1c-services/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/1c_icon_6c9b2d95f0.svg">
+                                        <div class="item">
+                                            <div class="item_title">1С-хостинг</div>
+                                            <div class="item_subtitle">Облако и сервисы для приложений 1С</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/services/custom-cloud/">
+                                        <img width="40" height="40"
+                                             src="https://ru-msk-2.store.cloud.mts.ru/uploads/custom_cloud_icon_e45a42cf9b.svg">
+                                        <div class="item">
+                                            <div class="item_title">Проектные облачные решения (Custom)</div>
+                                            <div class="item_subtitle">Облачная инфраструктура, разработанная под
+                                                уникальные нужды вашего бизнеса
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="desktop-nav_list-item">
+                <a href="https://mws.ru/partners/partnerskie_resheniya/?utm_source=click_menu"
+                   class="nav_menu-button">
+                    <span class="name">Партнерские сервисы</span>
+                </a>
+            </li>
+            <li class="desktop-nav_list-item">
+                <a href="https://mws.ru/partners/" class="nav_menu-button">
+                    <span class="name">Стать партнером</span>
+                </a>
+            </li>
+            <li class="desktop-nav_list-item">
+                <a href="https://mws.ru/promo/" class="nav_menu-button">
+                    <span class="name">Акции</span>
+                </a>
+            </li>
+            <li class="desktop-nav_list-item">
+                <div class="nav_menu-button">
+                    <span class="name">События</span>
+                    <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="24"
+                         height="24" class="icon">
+                        <path
+                            d="M6.254 12C5.13904 12 4.58067 13.3483 5.36906 14.1368L9.9588 18.7274C12.8067 21.5758 14.2306 23 16 23C17.7694 23 19.1934 21.5758 22.0412 18.7274L26.6309 14.1368C27.4193 13.3483 26.861 12 25.746 12C25.4141 12 25.0958 12.1319 24.861 12.3666L20.2713 16.9572C18.7974 18.4314 17.8662 19.3553 17.0979 19.9416C16.3874 20.4837 16.1174 20.4965 16 20.4965C15.8826 20.4965 15.6126 20.4837 14.9021 19.9416C14.1338 19.3553 13.2026 18.4314 11.7287 16.9572L7.13894 12.3666C6.90425 12.1319 6.58592 12 6.254 12Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+
+                <div class="drop_list">
+                    <div class="base-menu">
+                        <div class="drop_list-left_section">
+                            <div class="drop_list-name">События</div>
+                            <div class="drop_list-about">
+                                Рассказываем о наших мероприятиях, делимся новостями, обучаем
+                            </div>
+                        </div>
+                        <div class="drop_list-right_section-permanent">
+                            <ul class="content-list">
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/news/">
+                                        <img width="40" height="40"
+                                             src="https://mws.ru/_ipx/s_40x40/header/news-icon.svg">
+                                        <div class="item">
+                                            <div class="item_title">Новости</div>
+                                            <div class="item_subtitle">Статьи об услугах, кейсы, дайджесты</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/events/">
+                                        <img width="40" height="40"
+                                             src="https://mws.ru/_ipx/s_40x40/header/events-icon.svg">
+                                        <div class="item">
+                                            <div class="item_title">Мероприятия</div>
+                                            <div class="item_subtitle">Вебинары, конференции, митапы</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/blog/">
+                                        <img width="40" height="40"
+                                             src="https://mws.ru/_ipx/s_40x40/header/article-icon.svg">
+                                        <div class="item">
+                                            <div class="item_title">Статьи</div>
+                                            <div class="item_subtitle">Новости сервисов, платформы</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/courses/devops/">
+                                        <img width="40" height="40"
+                                             src="https://mws.ru/_ipx/s_40x40/header/devops-course-icon.svg">
+                                        <div class="item">
+                                            <div class="item_title">Cloud DevOps</div>
+                                            <div class="item_subtitle">Бесплатный курс по DevOps и Kubernetes</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link" href="/courses/network-technologies/">
+                                        <img width="40" height="40"
+                                             src="https://mws.ru/_ipx/s_40x40/header/network-course-icon.svg">
+                                        <div class="item">
+                                            <div class="item_title">Основы сетевых технологий</div>
+                                            <div class="item_subtitle">Бесплатный курс об устройстве сетей</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="desktop-nav_list-item">
+                <div class="nav_menu-button">
+                    <span class="name">Поддержка</span>
+                    <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="24"
+                         height="24" class="icon">
+                        <path
+                            d="M6.254 12C5.13904 12 4.58067 13.3483 5.36906 14.1368L9.9588 18.7274C12.8067 21.5758 14.2306 23 16 23C17.7694 23 19.1934 21.5758 22.0412 18.7274L26.6309 14.1368C27.4193 13.3483 26.861 12 25.746 12C25.4141 12 25.0958 12.1319 24.861 12.3666L20.2713 16.9572C18.7974 18.4314 17.8662 19.3553 17.0979 19.9416C16.3874 20.4837 16.1174 20.4965 16 20.4965C15.8826 20.4965 15.6126 20.4837 14.9021 19.9416C14.1338 19.3553 13.2026 18.4314 11.7287 16.9572L7.13894 12.3666C6.90425 12.1319 6.58592 12 6.254 12Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+
+                <div class="drop_list">
+                    <div class="base-menu">
+                        <div class="drop_list-left_section">
+                            <div class="drop_list-name">Поддержка</div>
+                            <div class="drop_list-about">
+                                Техническая поддержка 24/7
+                            </div>
+                        </div>
+                        <div class="drop_list-right_section-permanent">
+                            <ul class="content-list">
+                                <li class="content-list_item">
+                                    <a class="content-list_link content-list_link_align-center" href="/contacts/">
+                                        <img width="40" height="40"
+                                             src="https://mws.ru/_ipx/s_40x40/header/news-icon.svg">
+                                        <div class="item">
+                                            <div class="item_title">Контакты</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content-list_item">
+                                    <a class="content-list_link content-list_link_align-center"
+                                       href="https://docs.cloud.mts.ru/" rel="noopener noreferrer">
+                                        <img width="40" height="40"
+                                             src="https://mws.ru/_ipx/s_40x40/header/article-icon.svg">
+                                        <div class="item">
+                                            <div class="item_title">Документация</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="desktop-nav_list-item">
+                <a href="https://mws.ru/vacancies/" class="nav_menu-button">
+                    <span class="name">Карьера</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+</body>
+</html>
